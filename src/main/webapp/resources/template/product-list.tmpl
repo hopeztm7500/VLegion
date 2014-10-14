@@ -1,0 +1,36 @@
+{{#products}}
+        <tr data-id="{{productId}}">
+		
+		    <td >
+		    <div class="{{strategyClass}}">{{strategyName}}</div>
+		    </td>
+		    <td>
+		    <a href="get-product?id={{productId}}">{{productName}}</a>
+		    </td>
+		    <td>
+		    
+		    <div class="net-value-number">{{newestNetVal}}</div>
+		    </td>
+		    <td>
+		     <div class="net-value-number">{{totalNetVal}}</div>
+		    </td>
+		  
+		    {{^auth}}
+		      <td>
+		    <div class="{{statusClass}}">{{statusName}}</div>
+		    </td>
+		     <td>
+		     <a class="btn btn-xs btn-warning {{buyDisabled}} " {{buyDisabled}} href="{{buyUrl}}">购买</a>
+		    </td>
+		    {{/auth}}
+		    
+		    {{#auth}}
+	     	<td>
+			    <a class="btn-xs btn-warning" action="delete" data-id="{{productId}}">删除</a>
+			    <a class="btn-xs btn-warning" href="copy-add-product?id={{productId}}">copy</a>
+			</td>
+			{{/auth}}
+			
+			
+       </tr>
+{{/products}} 

@@ -1,0 +1,13 @@
+	{{#articles}}
+		<div id="article-{{id}}" class="ul-item"
+			data-id="{{id}}">
+			<div class="li-item {{typeClass}}">{{typeName}}</div>
+			<div class="li-item list-title"><a href="get-article?id={{id}}">{{title}}</a></div>
+			<div class="li-item list-date">{{createDate}}</div>
+			{{#auth}}
+			<div class="li-item">
+			    <div class="btn-xs btn-warning margin-level1" action="delete" data-id="{{id}}">删除</div>
+			</div>
+			{{/auth}}
+		</div>
+	{{/articles}} 
