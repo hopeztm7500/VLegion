@@ -1,0 +1,40 @@
+body {
+	background: url(/resources/img/product-background.png) !important;
+}
+
+.real-price {
+	font-size: 18px;
+	font-family: font-family : 'Roboto', sans-serif;
+	background: orange !important;
+	color: #FFF;
+	font-weight: 400;
+	padding: 5px 15px;
+	margin: 12px 0 5px;
+	display: inline-block;
+}
+h1.row-title{
+	margin-top:0px;
+}
+
+.pro-box{
+	background-color:white;
+}
+.accessary{
+	background: rgba(255, 255, 255, .7);
+	color:black;
+	border-radius:5px;
+	padding:5px;
+	
+}
+.margin-15{
+	margin-left:15px;
+}
+.no-margin{
+	padding-left:5px !important;
+}
+.product-feature{
+	margin:10px 0px 10px 0px;
+}
+.left-align{
+	text-align:left;
+}

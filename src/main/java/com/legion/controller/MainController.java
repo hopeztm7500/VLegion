@@ -41,6 +41,13 @@ public class MainController {
 		checkAndAddAuth(model);
 		return "product-details";
 	}
+	
+
+	@RequestMapping(value = "cart")
+	public String cart(ModelMap model) {
+		checkAndAddAuth(model);
+		return "cart";
+	}
 
 	@RequestMapping(value = "contact-us")
 	public String contactUs(ModelMap model) {
