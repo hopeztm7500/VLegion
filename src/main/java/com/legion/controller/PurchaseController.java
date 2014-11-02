@@ -7,4 +7,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/purchase")
 public class PurchaseController {
 
+	
 }

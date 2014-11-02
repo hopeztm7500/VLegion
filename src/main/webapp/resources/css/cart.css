@@ -1,0 +1,10 @@
+body{
+	background: url(/resources/img/product-background.png) !important;
+}
+.cart_table_holder{
+	background:rgba(255, 255, 255, 0.7);
+	color:black;
+}
+.cart_table_holder .cart-table{
+	background:rgba(255, 255, 255, 0.7);
+}
